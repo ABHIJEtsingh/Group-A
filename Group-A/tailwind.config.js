@@ -5,7 +5,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        primaryRegular:["Regular"],
+        primarySemibold:["Semibold"],
+        primaryBold:["Bold"],
+        secondaryRegular:["RegularSecond"],
+        secondarySemibold:["SemiboldSecond"]
+      },
+    },
   },
   plugins: [],
 }

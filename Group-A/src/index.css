@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+    font-family: "Bold";
+    src:local("sf-pro-text_bold")
+    url("/Group-A/src/fonts/sf-pro-text_bold.ttf")
+    format("truetype");
+}
+@font-face {
+    font-family: "Semibold";
+    src:local("sf-pro-text_semibold")
+    url("/Group-A/src/fonts/sf-pro-text_semibold.ttf")
+    format("truetype");
+}
+@font-face {
+    font-family: "Regular";
+    src:local("sf-pro-text_regular")
+    url("/Group-A/src/fonts/sf-pro-text_regular.ttf")
+    format("truetype");
+}
+@font-face {
+    font-family: "RegularSecond";
+    src:local("sf-pro-display_regular")
+    url("/Group-A/src/fonts/sf-pro-display_regular.ttf")
+    format("truetype");
+}
+@font-face {
+    font-family: "SemiboldSecond";
+    src:local("sf-pro-display_semibold")
+    url("/Group-A/src/fonts/sf-pro-display_semibold.ttf")
+    format("truetype");
+}
+
