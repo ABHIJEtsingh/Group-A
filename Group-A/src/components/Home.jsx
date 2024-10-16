@@ -31,7 +31,7 @@ const Home=()=>{
                                 {p.index != 1 ? (
                                     <h2 className="text-[3.4rem] text-white font-primarybold font-[500] text-center">{p.name}</h2>
                                 ) : <h2 className="text-[3.4rem] text-black font-primarybold font-[500] text-center indent-0">{p.name}</h2>}
-                                <h3 className="text-center text-[1.75rem] font-[400] font-primarybold leading-none">Hello, Apple Intelligence</h3>
+                                <h3 className={`${p.index != 1 ? "text-white" : "text-black"} text-center text-[1.75rem] font-[400] font-primarybold leading-none`}>Hello, Apple Intelligence</h3>
                                 {p.index == 1 ? (
                                     <div className="text-center pt-1 mt-1">
                                         <h3 className="font-primarybold text-[1.15em] text-zinc-500" >Available Starting 10.23</h3>
@@ -41,11 +41,11 @@ const Home=()=>{
                             <div className="flex items-center justify-center">
                                 {p.index === 1 ? (
                                     <div className="absolute top-[28vh] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                                        <Button />
+                                        <Button text={"Pre-Order"}/>
                                     </div>
                                 ) : (
                                     <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                                        <Button />
+                                        <Button text={"Buy"}/>
                                     </div>
                                 )}
                                <h3 className={`${p.index == 2? "text-zinc-200":"text-zinc-500"} absolute bottom-10 pt-3`}>Apple Intelligence coming this far!</h3>
