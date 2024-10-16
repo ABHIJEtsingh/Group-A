@@ -26,7 +26,7 @@ const Home=()=>{
             <div className="relative w-full h-full flex flex-col justiify-center items-center">
                 {Device.map((p)=>{
                     return (
-                        <div className="upper relative w-full h-[40vw] mb-4"> 
+                        <div className="upper relative w-full h-[37vw] mb-4"> 
                             <div className="absolute  top-[14vh] left-1/2 transform -translate-x-1/2 -translate-y-1/2" key={p.index}>
                                 {p.index != 1 ? (
                                     <h2 className="text-[3.4rem] text-white font-primarybold font-[500] text-center">{p.name}</h2>
