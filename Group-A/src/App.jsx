@@ -1,4 +1,4 @@
-
+import Home from './components/Home'
 import React from 'react'
 import NavBar from './components/Nav'
 
@@ -8,6 +8,7 @@ function App() {
     <>
     <div className="w-full h-screen bg-zinc-300">
       <NavBar/>
+      <Home/>
     </div>
     </>
   )
