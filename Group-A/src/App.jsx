@@ -3,11 +3,12 @@ import React from 'react'
 import NavBar from './components/Nav'
 
 
+
 function App() {
 
   return (
     <>
-    <div className="w-full h-screen bg-zinc-300">
+    <div className="w-full min-h-screen bg-zinc-300">
       <NavBar/>
       <Home/>
     </div>
