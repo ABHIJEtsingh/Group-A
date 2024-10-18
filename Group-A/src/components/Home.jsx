@@ -22,8 +22,8 @@ const Home=()=>{
 
     return(
         <>
-        <div className="relative w-full h-screen">
-            <div className="relative w-full h-full flex flex-col justiify-center items-center">
+        <div className=" w-full h-fit-content">
+            <div className=" flex flex-col justiify-center items-center">
                 {Device.map((p)=>{
                     return (
                         <div className="upper relative w-full h-[40vw] mb-4"> 
