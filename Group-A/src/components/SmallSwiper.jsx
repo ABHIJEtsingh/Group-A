@@ -7,18 +7,20 @@ import 'swiper/swiper-bundle.css';
 import '../style/smallSwiper.css';
 
 import 'swiper/css/effect-coverflow';
-import ImageOne from '../../public/foot.jpg';
-import ImageTwo from '../../public/medi.jpg';
-import ImageThree from '../../public/foot.jpg';
-import ImageFour from '../../public/picOne1.jpg';
-import ImageSix from '../../public/basket.jpg';
 
 const slidesData = [
-  { image: ImageOne, genre: "Comedy .", dot: "Listen" },
-  { image: ImageTwo, genre: "Action .", dot: "George Clooney and Brad pitt" },
-  { image: ImageThree, genre: "Action .", dot: "George Clooney and Brad pitt" },
-  { image: ImageFour, genre: "Action .", dot: "George Clooney and Brad pitt" },
-  { image: ImageSix, genre: "Mystery .", dot: "Kindness make a come back" },
+  { image: "https://is1-ssl.mzstatic.com/image/thumb/7QggTvk_fHz-FE9Pru2GxA/1378x774.jpg",
+   genre: "Comedy .", dot: "Listen" },
+  { image: "https://is1-ssl.mzstatic.com/image/thumb/Features221/v4/05/4f/66/054f66a9-ada8-6bad-7916-db26fd8ceb27/f5ef6771-7f39-4eb5-8e81-b6cbc7ebeb53.png/572x322.jpg",
+   genre: "Action .", dot: "George Clooney and Brad pitt" },
+  { image: "https://is1-ssl.mzstatic.com/image/thumb/Features116/v4/b0/9d/79/b09d79eb-8b70-f911-621e-d456b6d98d84/5a7eaa86-0fad-454a-b97e-7db4ef77d7d9.png/572x322.jpg",
+   genre: "Action .", dot: "George Clooney and Brad pitt" },
+  { image: "https://is1-ssl.mzstatic.com/image/thumb/p-dFQhrrenz0eg8_smgu9w/1378x774.jpg",
+   genre: "Action .", dot: "George Clooney and Brad pitt" },
+  { image: "https://is1-ssl.mzstatic.com/image/thumb/Video221/v4/13/2b/9e/132b9e36-02f0-22e5-5a67-e2462500c987/media-CO_KA_0126-9332054-Artwork-iOS-307612.png/572x322.jpg",
+   genre: "Action .", dot: "George Clooney and Brad pitt" },
+  { image: "https://is1-ssl.mzstatic.com/image/thumb/Features211/v4/bd/60/67/bd6067ae-64ac-04df-dc96-4757069c37dd/6610be22-3caa-493c-90b0-a8f73520c9bf.png/572x322.jpg",
+   genre: "Mystery .", dot: "Kindness make a come back" },
 ];
 
 const MySmallSwiperComponent = () => {
@@ -35,7 +37,7 @@ const MySmallSwiperComponent = () => {
         slidesPerView={3.5}
         autoplay={autoplay ? {
           delay: 2000,
-          disableOnInteraction: false,
+          disableOnInteraction: true,
         } : false}
         loop={true}
         parallax={true}
