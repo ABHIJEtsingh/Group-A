@@ -10,7 +10,7 @@ const Cards=()=>{
     idx:2,
     title:"AirPods4",
     description1:"Iconic.Now supersonic.",
-    description2:"Availabe with  Active Noise cancellation",
+    description2:"Availabe with Active Noise cancellation",
     image:"https://www.apple.com/v/home/bt/images/promos/airpods-4/promo_airpods_4_avail__bl22kvpg6ez6_medium.jpg"
   },{
     idx:3,
@@ -39,65 +39,75 @@ const Cards=()=>{
   return(
   
 <>
-<div className="w-full h-fit  ">
-  <div className="flex flex-wrap">
+<div className="w-full h-fit bg-white ">
+  <div className="flex flex-wrap ">
     {cardsData.map((data)=>{
       return <>
-      <div className="h-[70vh] w-[48%]  m-2 ">
-      {data.idx===1?(<div className="flex items-center justify-center" ><img className="absolute  h-14 mt-40  " src="https://www.apple.com/v/home/bt/images/logos/apple-watch-series-10/promo_logo_apple_watch_series_10__qk5vaa89vnm2_large_2x.png" alt="" />
+      <div className="h-[74vh] w-[49%]  pl-2 m-1  ">
+      {data.idx===1?(
+        <div className="flex items-center justify-center" >
+        <img className="absolute  h-14 mt-40  " src="https://www.apple.com/v/home/bt/images/logos/apple-watch-series-10/promo_logo_apple_watch_series_10__qk5vaa89vnm2_large_2x.png" alt="" />
       <p className="absolute  pt-5 mt-80 mb-20 text-[1.3em]">{data.description2}</p>
-      <div>
+      <div className="absolute mt-80 pt-4 ">
       <Button/>
       </div>
       </div>
       ):null}
+            {data.idx===2?(
+              <div className="flex items-center justify-center absolute mt-80 text-white  ml-40 " >
+       <div >
+        <h1 className="text-4xl  font-extrabold ml-10">{data.title}</h1>
+           <p className="ml-10" >{data.description1}</p>
+           <p className="-mr-8">{data.description2}</p>
+
+           <Button/>
+</div>
+         
+         
+         
+            </div>
+      ):null}
+
+           {data.idx===3?(
+            <div className="flex items-center justify-center " >
+            <h1 className="text-5xl text-black  absolute  pt-3 mt-60 mb-20 font-primarySemibold ">{data.title}</h1>
+          <div className="absolute mt-60 pt-8 justify-space-around ">
+          <p>{data.description1}</p>
+          <p className="text-gray-500 ">{data.description2}</p>
+          </div>
+           <div className="absolute mt-80 pt-8 ">
+           <Button/>
+           </div>
+            </div>
+      ):null}
       
       
-       {data.idx===4?(<div className="flex items-center justify-center" ><img className="absolute  h-14  mt-40  " src="https://www.apple.com/v/home/bt/images/logos/apple-watch-ultra-2/promo_logo_apple_watch_ultra2__ggg2x39rsvqu_large_2x.png" alt="" />
+       {data.idx===4?(
+        <div className="flex items-center justify-center" >
+        <img className="absolute  h-14  mt-40  " src="https://www.apple.com/v/home/bt/images/logos/apple-watch-ultra-2/promo_logo_apple_watch_ultra2__ggg2x39rsvqu_large_2x.png" alt="" />
        <p className="absolute  pt-5  mt-80 mb-20 text-white text-[1.3em]">{data.description2}</p>
-       <div>
+       <div className="absolute mt-80  pt-4 ">
        <Button/>
        </div>
        </div>
       ):null}
 
-        {data.idx===5?(<div className="flex items-center justify-center" ><img className="absolute  h-9  mt-40  " src="https://www.apple.com/v/home/bt/images/logos/iphone-tradein/promo_logo_iphone_tradein__7y3gtai5az66_large_2x.png" alt="" />
+        {data.idx===5?(
+          <div className="flex items-center justify-center" >
+          <img className="absolute  h-9  mt-40  " src="https://www.apple.com/v/home/bt/images/logos/iphone-tradein/promo_logo_iphone_tradein__7y3gtai5az66_large_2x.png" alt="" />
         <p  className="absolute pt-3 mt-80 mb-20  text-[1.3em]">{data.description1}</p>
         <p className="absolute  mt-80 mb-[2vh] text-[1.3em]">{data.description2}</p>
-       
-        
         </div>
       ):null} 
-          {data.idx===2?(<div className="flex items-center justify-center font-primary-bold" >
-            <h1 className="text-4xl text-white font-extrabold absolute  pt-5 mt-80 mb-20">{data.title}</h1>
-           <p>{data.description1}</p>
-           <p>{data.description2}</p>
-           <div>
-           <Button/>
-           </div>
-            </div>
-      ):null}
-            {data.idx===3?(<div className="flex items-center justify-center font-primary-bold " >
-            <h1 className="text-4xl text-black font-extrabold absolute  pt-5 mt-80 mb-20">{data.title}</h1>
-           <p>{data.description1}</p>
-           <p>{data.description2}</p>
-           <div>
-           <Button/>
-           </div>
-            </div>
-      ):null}
 
-  
-    
-
-    
-       {data.idx===6?(<div className="flex items-center justify-center" ><img className="absolute  h-9 mt-40  " src="https://www.apple.com/v/home/bt/images/logos/apple-card/logo__dcojfwkzna2q_large_2x.png" alt="" />
+       {data.idx===6?(
+        <div className="flex items-center justify-center" >
+        <img className="absolute  h-9 mt-40  " src="https://www.apple.com/v/home/bt/images/logos/apple-card/logo__dcojfwkzna2q_large_2x.png" alt="" />
         <p className="absolute  mt-80 mb-20 text-[1.3em]">{data.description1}</p>
         <p className="absolute  mt-80 mb-[3vh] text-[1.3em]">{data.description2}</p>
-  <div className="absolute mt-80 ">
+  <div className="absolute mt-80 pt-16 ">
   <Button/>
   </div>
-   
        </div>
 
       ):null}
