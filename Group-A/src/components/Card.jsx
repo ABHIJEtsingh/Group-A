@@ -77,10 +77,10 @@ const Cards=()=>{
           <p className="text-gray-500 ">{data.description2}</p>
           </div>
           <div className="mt-80 absolute pt-80">
-          <p className="text-gray-500 mt-80 font-sachin font-light-900">{data.description3}</p>
+          <p className="text-gray-500 mt-80 font-sachin font">{data.description3}</p>
           </div>
            <div className="absolute mt-80 pt-8 ">
-           <Button text="Buy"/>
+           <Button text="Pre-Order"/>
            </div>
             </div>
       ):null}
@@ -126,7 +126,7 @@ const Cards=()=>{
         <p className="absolute  mt-80 mb-20 text-[1.3em]">{data.description1}</p>
         <p className="absolute  mt-80 mb-[3vh] text-[1.3em]">{data.description2}</p>
   <div className="absolute mt-80 pt-16">
-  <Button text="Buy" />
+  <Button text="Apply Now" />
   </div>
        </div>
 
