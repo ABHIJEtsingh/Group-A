@@ -17,6 +17,7 @@ const Cards=()=>{
     title:"iPad mini",
     description1:"Hello, Apple Intelligence",
     description2:"Availabe, starting 10.23",
+    description3:"Apple intelligence coming this fall",
     image:"https://www.apple.com/v/home/bt/images/promos/ipad-mini/promo_ipad_mini_announce__dnt5vgkh34uq_small_2x.jpg",
   },{
     idx:4,
@@ -54,11 +55,11 @@ const Cards=()=>{
       </div>
       ):null}
             {data.idx===2?(
-              <div className="flex items-center justify-center absolute mt-80 text-white  ml-40 " >
-       <div >
-        <h1 className="text-4xl  font-extrabold ml-10">{data.title}</h1>
-           <p className="ml-10 " >{data.description1}</p>
-           <p className="-mr-8 ">{data.description2}</p>
+              <div className="flex items-center justify-center absolute mt-80 text-white ml-40  " >
+       <div>
+        <h1 className="text-4xl text-center font-extrabold empty-10 ml-10">{data.title}</h1>
+           <p className="text-center" >{data.description1}</p>
+           <p className="text-center">{data.description2}</p>
 
            <Button text="Buy"/>
 </div>
@@ -75,8 +76,11 @@ const Cards=()=>{
           <p>{data.description1}</p>
           <p className="text-gray-500 ">{data.description2}</p>
           </div>
+          <div className="mt-80 absolute pt-80">
+          <p className="text-gray-500 mt-80 font-sachin font">{data.description3}</p>
+          </div>
            <div className="absolute mt-80 pt-8 ">
-           <Button text="Buy"/>
+           <Button text="Pre-Order"/>
            </div>
             </div>
       ):null}
@@ -121,8 +125,8 @@ const Cards=()=>{
         <img className="absolute  h-9 mt-40  " src="https://www.apple.com/v/home/bt/images/logos/apple-card/logo__dcojfwkzna2q_large_2x.png" alt="" />
         <p className="absolute  mt-80 mb-20 text-[1.3em]">{data.description1}</p>
         <p className="absolute  mt-80 mb-[3vh] text-[1.3em]">{data.description2}</p>
-  <div className="absolute mt-80 pt-16 ">
-  <Button text="Buy"/>
+  <div className="absolute mt-80 pt-16">
+  <Button text="Apply Now" />
   </div>
        </div>
 
