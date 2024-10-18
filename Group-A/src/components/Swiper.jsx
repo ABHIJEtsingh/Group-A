@@ -7,18 +7,18 @@ import 'swiper/swiper-bundle.css';
 import '../style/swiper.css';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-coverflow';
-import ImageOne from '../../public/picOne.jpg';
-import ImageTwo from '../../public/picTwo.jpg';
-import ImageThree from '../../public/picThree.jpg';
-import ImageFour from '../../public/picFour.jpg';
-import ImageFive from '../../public/picFive.jpg';
 
 const slidesData = [
-  { image: ImageOne, genre: "Comedy .", dot: "The Shady side of paradise" },
-  { image: ImageTwo, genre: "Action .", dot: "George Clooney and Brad pitt" },
-  { image: ImageThree, genre: "Drama .", dot: "New Season" },
-  { image: ImageFour, genre: "Thriller .", dot: "winner of three Emmy Award" },
-  { image: ImageFive, genre: "Mystery .", dot: "Kindness make a come back" },
+  { image: "https://is1-ssl.mzstatic.com/image/thumb/Ed-B4V6OY0yoxxlksKeulw/1378x774.jpg" ,
+   genre: "Comedy .", cap: "The Shady side of paradise" },
+  { image: "https://is1-ssl.mzstatic.com/image/thumb/2eBqvT3JXPbdzHWj6HM5_w/1378x774.jpg",
+     genre: "Action .", cap: "George Clooney and Brad pitt" },
+  { image: "https://is1-ssl.mzstatic.com/image/thumb/C34jADlGtR5wObjPAMbW4w/1378x774.jpg",
+   genre: "Drama .", cap: "New Season" },
+  { image: "https://is1-ssl.mzstatic.com/image/thumb/44dJzkosAhD0-ugRepvsfw/1378x774.jpg",
+   genre: "Thriller .", cap: "winner of three Emmy Award" },
+  { image: "https://is1-ssl.mzstatic.com/image/thumb/ageP1PYyLi7UlNiWMva32Q/1378x774.jpg",
+   genre: "Mystery .", cap: "Kindness make a come back" },
 ];
 
 const MySwiperComponent = () => {
@@ -50,7 +50,7 @@ const MySwiperComponent = () => {
             <img className='m-4' src={slide.image} alt='' />
             <button className='slide-btn'>Stream now</button>
             <h3 className='texting'>{slide.genre}</h3>
-            <h3 className='dot'>{slide.dot}</h3>
+            <h3 className='dot'>{slide.cap}</h3>
           </SwiperSlide>
         ))}
       </Swiper>
