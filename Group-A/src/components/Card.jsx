@@ -8,7 +8,7 @@ const Cards=()=>{
     image:"https://www.apple.com/v/home/bt/images/promos/apple-watch-series-10/promo_apple_watch_series_10_avail_lte__c70y29goir42_large_2x.jpg"
   },{
     idx:2,
-    title:"AirPods4",
+    title:"AirPods 4",
     description1:"Iconic.Now supersonic.",
     description2:"Availabe with Active Noise cancellation",
     image:"https://www.apple.com/v/home/bt/images/promos/airpods-4/promo_airpods_4_avail__bl22kvpg6ez6_medium.jpg"
@@ -42,113 +42,84 @@ const Cards=()=>{
 <div className="w-full h-fit bg-white ">
   <div className="flex flex-wrap ">
     {cardsData.map((data)=>{
+
       return <>
-      <div className="h-[74vh] w-[49%]  pl-2 m-1  ">
-      {data.idx===1?(
-        <div className="flex items-center justify-center" >
-        <img className="absolute  h-14 mt-40  " src="https://www.apple.com/v/home/bt/images/logos/apple-watch-series-10/promo_logo_apple_watch_series_10__qk5vaa89vnm2_large_2x.png" alt="" />
-      <p className="absolute  pt-5 mt-80 mb-20 text-[1.3em]">{data.description2}</p>
-      <div className="absolute mt-80 pt-4 ">
-      <Button text="Buy"/>
-      </div>
-      </div>
-      ):null}
-            {data.idx===2?(
-              <div className="flex items-center justify-center absolute mt-80 text-white  ml-40 " >
-       <div >
-        <h1 className="text-4xl  font-extrabold ml-10">{data.title}</h1>
-           <p className="ml-10 " >{data.description1}</p>
-           <p className="-mr-8 ">{data.description2}</p>
-
-           <Button text="Buy"/>
-</div>
-         
-         
-         
-            </div>
-      ):null}
-
-           {data.idx===3?(
-            <div className="flex items-center justify-center " >
-            <h1 className="text-5xl text-black  absolute  pt-3 mt-60 mb-20 font-primarySemibold ">{data.title}</h1>
-          <div className="absolute mt-60 pt-8 justify-space-around ">
-          <p>{data.description1}</p>
-          <p className="text-gray-500 ">{data.description2}</p>
-          </div>
-           <div className="absolute mt-80 pt-8 ">
-           <Button text="Buy"/>
-           </div>
-            </div>
-      ):null}
-      
-      
-       {data.idx===4?(
-        <div className="flex items-center justify-center" >
-        <img className="absolute  h-14  mt-40  " src="https://www.apple.com/v/home/bt/images/logos/apple-watch-ultra-2/promo_logo_apple_watch_ultra2__ggg2x39rsvqu_large_2x.png" alt="" />
-       <p className="absolute  pt-5  mt-80 mb-20 text-white text-[1.3em]">{data.description2}</p>
-       <div className="absolute mt-80  pt-4 ">
-       <Button text="Buy"/>
-       </div>
-       </div>
-      ):null}
-
-        {data.idx===5?(
+        <div className="h-[74vh] w-[49%]  pl-2 m-1  ">
+          {data.idx===1?(
           <div className="flex items-center justify-center" >
-          <img className="absolute  h-9  mt-40  " src="https://www.apple.com/v/home/bt/images/logos/iphone-tradein/promo_logo_iphone_tradein__7y3gtai5az66_large_2x.png" alt="" />
-        <p  className="absolute pt-3 mt-80 mb-20  text-[1.3em]">{data.description1}</p>
-       
-        <p className="absolute  mt-80 mb-[2vh] text-[1.3em]">{data.description2}</p>
-      
-        <div className=" absolute mt-80 gap-5 p-8">
-            <button className="bg-[#0071e3] text-white hover:bg-[#0071e3] font-primarybold font-[500] h-9 w-40 rounded-full mt-20 ">
-          Get your estimate
-            </button>
+            <img className="absolute  h-14 mt-40" src="https://www.apple.com/v/home/bt/images/logos/apple-watch-series-10/promo_logo_apple_watch_series_10__qk5vaa89vnm2_large_2x.png" alt="" />
+            <p className="absolute  pt-5 mt-80 mb-20 font-secondaryBold text-[1.5em]">{data.description2}</p>
+            <div className="absolute mt-80 pt-4 ">
+                <Button text="Buy"/>
             </div>
+          </div>
+          ):null}
 
 
-        
+          {data.idx===2?(
+            <div className="flex items-center justify-center absolute mt-80 text-white ml-36 mt-[38vh]" >
+              <div className="px-10 w-full h-full flex items-center flex-col justify-center">
+                <h1 className="text-4xl text-center font-secondaryBold text-[2.5em] font-[600] mt-10">{data.title}</h1>
+                <p className="text-center font-secondaryBold text-[1.3em] font-[400]" >{data.description1}</p>
+                <p className="text-center font-secondaryBold text-[1.3em] font-[400]">{data.description2}</p>
+                <Button text="Buy"/>
+              </div>
+            </div>
+          ):null}
+
+          {data.idx===3?(
+            <div className="flex items-center justify-center " >
+              <h1 className="text-5xl text-black  absolute pt-3 mt-60 mb-20 font-secondaryBold font-[600]">{data.title}</h1>
+              <div className="absolute mt-60 pt-10 justify-space-around pt-8">
+                <p className="text-center font-secondaryBold text-[1.5em] font-[400]">{data.description1}</p>
+                <p className="text-gray-500 font-secondaryBold text-center">{data.description2}</p>
+              </div>
+              <div className="absolute mt-80 pt-20">
+                <Button text="Buy"/>
+              </div>
+            </div>
+          ):null}
+      
+      
+          {data.idx===4?(
+            <div className="flex items-center justify-center" >
+              <img className="absolute  h-14  mt-40  " src="https://www.apple.com/v/home/bt/images/logos/apple-watch-ultra-2/promo_logo_apple_watch_ultra2__ggg2x39rsvqu_large_2x.png" alt="" />
+              <p className="absolute  pt-5  mt-80 mb-20 text-white text-[1.3em]">{data.description2}</p>
+              <div className="absolute mt-80  pt-4 ">
+                <Button text="Buy"/>
+              </div>
+            </div>
+            ):null}
+
+            {data.idx===5?(
+              <div className="flex items-center justify-center" >
+                <img className="absolute  h-9  mt-40  " src="https://www.apple.com/v/home/bt/images/logos/iphone-tradein/promo_logo_iphone_tradein__7y3gtai5az66_large_2x.png" alt="" />
+                <p className="absolute pt-3 mt-80 mb-20  text-[1.3em]">{data.description1}</p>
+                <p className="absolute  mt-80 mb-[2vh] text-[1.3em]">{data.description2}</p>
+                <div className=" absolute mt-80 gap-5 p-8">
+                  <button className="bg-[#0071e3] text-white hover:bg-[#0071e3] font-primarybold font-[500] h-9 w-40 rounded-full mt-20 ">
+                  Get your estimate
+                  </button>
+                </div>
+              </div>
+            ):null} 
+
+          {data.idx===6?(
+            <div className="flex items-center justify-center" >
+              <img className="absolute  h-9 mt-40  " src="https://www.apple.com/v/home/bt/images/logos/apple-card/logo__dcojfwkzna2q_large_2x.png" alt="" />
+              <p className="absolute  mt-80 mb-20 text-[1.3em]">{data.description1}</p>
+              <p className="absolute  mt-80 mb-[3vh] text-[1.3em]">{data.description2}</p>
+              <div className="absolute mt-80 pt-16 ">
+                <Button text="Buy"/>
+              </div>
+            </div>
+          ):null}
+          <img src={`${data.image}`}className="w-full h-full object-cover"/>
         </div>
-
-       
-
-        
-        
-        
-      ):null} 
-
-       {data.idx===6?(
-        <div className="flex items-center justify-center" >
-        <img className="absolute  h-9 mt-40  " src="https://www.apple.com/v/home/bt/images/logos/apple-card/logo__dcojfwkzna2q_large_2x.png" alt="" />
-        <p className="absolute  mt-80 mb-20 text-[1.3em]">{data.description1}</p>
-        <p className="absolute  mt-80 mb-[3vh] text-[1.3em]">{data.description2}</p>
-  <div className="absolute mt-80 pt-16 ">
-  <Button text="Buy"/>
-  </div>
-       </div>
-
-      ):null}
-
-      <img src={`${data.image}`}className="w-full h-full object-cover"/>
-    
-      </div>
-    
-  
       </>
     })}
-
-    {/* <div className="h-[70vh] w-[48%] bg-green-900 m-2"></div>
-    <div className="h-[70vh] w-[48%] bg-blue-900 m-2"></div>
-    <div className="h-[70vh] w-[48%] bg-violet-900 m-2"></div>
-    <div className="h-[70vh] w-[48%] bg-orange-900 m-2"></div>
-    <div className="h-[70vh] w-[48%] bg-red-900 m-2"></div>
-    <div className="h-[70vh] w-[48%] bg-yellow-900 m-2"></div> */}
   </div>
 </div>
-
-
 </>
-
-
-  )
-}
+)}
 export default Cards;
