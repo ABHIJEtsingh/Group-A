@@ -7,6 +7,7 @@ import MySmallSwiperComponent from './components/SmallSwiper'
 
 
 
+
 function App() {
 
   return (

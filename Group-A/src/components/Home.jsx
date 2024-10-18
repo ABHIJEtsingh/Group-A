@@ -1,6 +1,5 @@
 import React from "react";
 import Button from "./Button";
-
 const Device=[{
     index:1,
     name:"iPad mini",
@@ -23,11 +22,11 @@ const Home=()=>{
     return(
         <>
         <div className=" w-full h-fit-content">
-            <div className=" flex flex-col justiify-center items-center">
+            <div className="relative flex flex-col justiify-center items-center">
                 {Device.map((p)=>{
                     return (
-                        <div className="upper relative w-full h-[40vw] mb-4"> 
-                            <div className="absolute  top-[14vh] left-1/2 transform -translate-x-1/2 -translate-y-1/2" key={p.index}>
+                        <div className="upper relative w-full h-[38vw] mb-4"> 
+                            <div className="absolute top-[14vh] left-1/2 transform -translate-x-1/2 -translate-y-1/2" key={p.index}>
                                 {p.index != 1 ? (
                                     <h2 className="text-[3.4rem] text-white font-primarybold font-[500] text-center">{p.name}</h2>
                                 ) : <h2 className="text-[3.4rem] text-black font-primarybold font-[500] text-center indent-0">{p.name}</h2>}
@@ -50,7 +49,7 @@ const Home=()=>{
                                 )}
                                <h3 className={`${p.index == 2? "text-zinc-200":"text-zinc-500"} absolute bottom-10 pt-3`}>Apple Intelligence coming this far!</h3>
                             </div>
-                            <img src={`${p.image}`} className="w-full h-full object-bottom mb-10"/>
+                            <img src={`${p.image}`} className="w-full h-full object-bottom mb-10" alt="Description" />
                         </div>
                     )
                 })}
