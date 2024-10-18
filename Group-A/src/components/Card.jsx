@@ -56,9 +56,9 @@ const Cards=()=>{
             {data.idx===2?(
               <div className="flex items-center justify-center absolute mt-80 text-white  ml-40 " >
        <div >
-        <h1 className="text-4xl  font-extrabold ml-">{data.title}</h1>
-           <p className="ml-10" >{data.description1}</p>
-           <p className="-mr-8">{data.description2}</p>
+        <h1 className="text-4xl  font-extrabold ml-10">{data.title}</h1>
+           <p className="ml-10 " >{data.description1}</p>
+           <p className="-mr-8 ">{data.description2}</p>
 
            <Button text="Buy"/>
 </div>
@@ -96,8 +96,24 @@ const Cards=()=>{
           <div className="flex items-center justify-center" >
           <img className="absolute  h-9  mt-40  " src="https://www.apple.com/v/home/bt/images/logos/iphone-tradein/promo_logo_iphone_tradein__7y3gtai5az66_large_2x.png" alt="" />
         <p  className="absolute pt-3 mt-80 mb-20  text-[1.3em]">{data.description1}</p>
+       
         <p className="absolute  mt-80 mb-[2vh] text-[1.3em]">{data.description2}</p>
+      
+        <div className=" absolute mt-80 gap-5 p-8">
+            <button className="bg-[#0071e3] text-white hover:bg-[#0071e3] font-primarybold font-[500] h-9 w-40 rounded-full mt-20 ">
+          Get your estimate
+            </button>
+            </div>
+
+
+        
         </div>
+
+       
+
+        
+        
+        
       ):null} 
 
        {data.idx===6?(
