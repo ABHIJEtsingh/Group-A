@@ -49,18 +49,18 @@ const Cards=()=>{
         <img className="absolute  h-14 mt-40  " src="https://www.apple.com/v/home/bt/images/logos/apple-watch-series-10/promo_logo_apple_watch_series_10__qk5vaa89vnm2_large_2x.png" alt="" />
       <p className="absolute  pt-5 mt-80 mb-20 text-[1.3em]">{data.description2}</p>
       <div className="absolute mt-80 pt-4 ">
-      <Button/>
+      <Button text="Buy"/>
       </div>
       </div>
       ):null}
             {data.idx===2?(
               <div className="flex items-center justify-center absolute mt-80 text-white  ml-40 " >
        <div >
-        <h1 className="text-4xl  font-extrabold ml-10">{data.title}</h1>
+        <h1 className="text-4xl  font-extrabold ml-">{data.title}</h1>
            <p className="ml-10" >{data.description1}</p>
            <p className="-mr-8">{data.description2}</p>
 
-           <Button/>
+           <Button text="Buy"/>
 </div>
          
          
@@ -76,7 +76,7 @@ const Cards=()=>{
           <p className="text-gray-500 ">{data.description2}</p>
           </div>
            <div className="absolute mt-80 pt-8 ">
-           <Button/>
+           <Button text="Buy"/>
            </div>
             </div>
       ):null}
@@ -87,7 +87,7 @@ const Cards=()=>{
         <img className="absolute  h-14  mt-40  " src="https://www.apple.com/v/home/bt/images/logos/apple-watch-ultra-2/promo_logo_apple_watch_ultra2__ggg2x39rsvqu_large_2x.png" alt="" />
        <p className="absolute  pt-5  mt-80 mb-20 text-white text-[1.3em]">{data.description2}</p>
        <div className="absolute mt-80  pt-4 ">
-       <Button/>
+       <Button text="Buy"/>
        </div>
        </div>
       ):null}
@@ -106,7 +106,7 @@ const Cards=()=>{
         <p className="absolute  mt-80 mb-20 text-[1.3em]">{data.description1}</p>
         <p className="absolute  mt-80 mb-[3vh] text-[1.3em]">{data.description2}</p>
   <div className="absolute mt-80 pt-16 ">
-  <Button/>
+  <Button text="Buy"/>
   </div>
        </div>
 
