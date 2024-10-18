@@ -8,13 +8,17 @@ import MySmallSwiperComponent from './components/SmallSwiper'
 
 
 
+import Footerr from './components/Footerr'
+
 function App() {
 
   return (
     <>
     <div className="w-full min-h-screen bg-zinc-300">
       <NavBar/>
+
       <Home/>
+      
     </div>
     <MySwiperComponent />
    
@@ -22,10 +26,9 @@ function App() {
       <Cards/>
     </div>
     <MySmallSwiperComponent />
- 
-   
-  
+    <Footerr />
     </>
+    
   )
 }
 
