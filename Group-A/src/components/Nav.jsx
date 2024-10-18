@@ -3,7 +3,7 @@ import React from "react";
 const NavBar=()=>{
     return(
         <>
-        <div className="container relative h-12 w-full bg-zinc-100 mx-auto flex items-center justify-around font-[SF Pro Text]">
+        <div className="relative h-12 w-full bg-zinc-100 flex">
             <nav className="fixed top-0 left-0 w-full bg-zinc-100 opacity-70 shadow-lg z-10">
                 <div className="flex gap-10 items-center justify-center h-12">
                     <svg height="44" viewBox="0 0 14 44" width="14" xmlns="http://www.w3.org/2000/svg">
